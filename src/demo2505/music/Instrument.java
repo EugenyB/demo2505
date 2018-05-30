@@ -1,6 +1,6 @@
-package demo2505;
+package demo2505.music;
 
-public class Instrument {
+public abstract class Instrument {
 
     private String name;
 
@@ -8,14 +8,12 @@ public class Instrument {
         this.name = name;
     }
 
-    Instrument() {
-    }
+//    Instrument() {
+//    }
 
-    void playNote(char note) {
-        System.out.println(note);
-    }
+    protected abstract void playNote(char note);
 
-    void play(String melody) {
+    public void play(String melody) {
         System.out.println(name);
         for (int i = 0; i < melody.length(); i++) {
             playNote(melody.charAt(i));
@@ -32,4 +30,5 @@ public class Instrument {
             this.name = name;
         }
     }
+
 }

@@ -1,10 +1,10 @@
-package demo2505;
+package demo2505.logic;
 
 public class Student {
-    String firstName;
-    String lastName;
-    double mark;
-    int age;
+    private String firstName;
+    private String lastName;
+    private double mark;
+    private int age;
 
     public Student(String firstName, String lastName, double mark, int age) {
         this.firstName = firstName;
@@ -12,8 +12,6 @@ public class Student {
         this.mark = mark;
         this.age = age;
     }
-
-
 
 
     public String getFirstName() {
